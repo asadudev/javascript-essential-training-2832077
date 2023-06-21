@@ -6,7 +6,7 @@
  */
 
 import Backpack from "./Backpack.js";
-import Book from "./Book.js";
+import Books from "./Book.js";
 
 const everydayPack = new Backpack(
   "Everyday Backpack",
@@ -23,58 +23,75 @@ console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
 console.log("Days since aquired:", everydayPack.backpackAge());
 
-// Book param order: title, author, ISBN, pubYear, pageNumber, currentPage, readStatus
-const surveillanceCapitalism = new Book(
-  "The Age of Surveillance Capitalism",
-  "Shoshana Zuboff",
-  9781610395694,
-  "2019",
-  691,
-  691,
-  "Finished"
+
+
+const js_1 = new Books(
+  "A Smarter Way to Learn JavaScript: ",
+  5,
+  "1st Edition",
+  "CreateSpace Independent Publishing Platform",
+  2007,
+  256,
+  256,
+  "finished"
 );
-console.log(surveillanceCapitalism);
 
-const consciousCreative = new Book(
-  "The Conscious Creative",
-  "Kelly Small",
-  9781487008024,
-  "2020",
-  216,
-  216,
-  "Finished"
+console.log("Book one:", js_1)
+
+
+const js_2 = new Books(
+  " Learn JavaScript VISUALLY:",
+  4.5,
+  "1st Edition",
+  "Nai Inc.",
+  2005,
+  197,
+  197,
+  "finished"
 );
-console.log(consciousCreative);
 
-const techVirtues = new Book(
-  "Technology and the Virtues",
-  "Shannon Vallor",
-  9780190905286,
-  "2016",
-  309,
-  138,
+console.log("Book two:", js_2)
+
+
+
+const js_3 = new Books(
+  "You Don’t Know JS",
+  4.0,
+  "1st Edition",
+  "O’Reilly Media",
+  1997,
+  109,
+  135,
   "Reading"
-)
-console.log(techVirtues);
+);
 
-const poohPhil = new Book(
-  "Pooh and the Philosophers",
-  "John Tyerman Williams",
-  9780749320706,
-  "1995",
-  192,
-  108,
+console.log("Book three:", js_3)
+
+
+
+const js_4 = new Books(
+  "Beginning JavaScript",
+  4.7,
+  "5th Edition",
+  "Wrox",
+  1999,
+  35,
+  355,
   "Reading"
-)
-console.log(poohPhil);
+);
 
-const zen = new Book(
-  "Zen and the Art of Motorcycle Maintenance",
-  "Robert M. Pirsig",
-  9780060958329,
-  "1974",
-  449,
-  449,
-  "Finished"
-)
-console.log(zen);
+console.log("Book four:", js_4)
+
+
+const js_5 = new Books(
+  "The Comprehensive Guide to Learning Professional JavaScript Programming",
+  4.9,
+  "1st Edition",
+  "Rheinwerk Computing",
+  2015,
+  213,
+  213,
+  "finished"
+);
+
+console.log("Book five:", js_5)

@@ -1,27 +1,30 @@
-class Book {
+class Books {
   constructor(
-    title,
-    author,
-    ISBN,
-    pubYear,
-    pageNumber,
-    currentPage,
-    readStatus
+    Title,
+    Rating,
+    Latest_Edition,
+    Publisher,
+    Publish_year,
+    Current_page,
+    Total_page,
+    Status,
   ) {
-    this.title = title;
-    this.author = author;
-    this.ISBN = ISBN;
-    this.pubYear = pubYear;
-    this.pageNumber = pageNumber;
-    this.currentPage = currentPage;
-    this.readStatus = readStatus;
+    this.Title = Title;
+    this.Rating = Rating;
+    this.Latest_Edition = Latest_Edition;
+    this.Publisher = Publisher;
+    this.Publish_year = Publish_year;
+    this.Current_page = Current_page;
+    this.Total_page = Total_page;
+    this.Status = Status
   }
   updateCurrentPage(newCurrentPage) {
-    this.currentPage = newCurrentPage;
+    this.Current_page = newCurrentPage;
   }
-  updateReadStatus(newReadStatus) {
-    this.readStatus = newReadStatus;
+  updateStatus(newStatus) {
+    this.Status = newStatus;
   }
+
 }
 
-export default Book;
+export default Books;
